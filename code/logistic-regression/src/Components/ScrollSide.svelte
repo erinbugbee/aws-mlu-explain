@@ -129,15 +129,15 @@
         <div class="step-content">
           <p>
             Now that we have the logistic function to predict the probabilities
-            of each outcome, we can predict the class. We use a decision
-            boundary to decide the predicted class based on the probability of
-            each class given the feature values. A typical threshold for the
-            decision boundary is 0.5, where we predict an outcome will occur if
-            the probability of that outcome is greater than 0.5. This boundary
-            can be adjusted — for example, if you really dislike the rain, you
-            may want to set the boundary higher to be more cautious, so that
-            that you predict a sunny day and go hiking only if the probability
-            of a sunny day exceeds that boundary.
+            of each outcome, we can predict the class. We use a classification
+            threshold, or decision boundary, to decide the predicted class based
+            on the probability of each class given the feature values. A typical
+            threshold is 0.5, where we predict an outcome will occur if the
+            probability of that outcome is greater than 0.5. This threshold can
+            be adjusted — for example, if you really dislike the rain, you may
+            want to set the threshold higher to be more cautious, so that that
+            you predict a sunny day and go hiking only if the probability of a
+            sunny day exceeds that threshold.
           </p>
         </div>
       </div>
@@ -164,7 +164,7 @@
           </div>
           <div id="input-container">
             <p>
-              <span class="bold">Decision Boundary: </span>{$DecisionBoundary}
+              <span class="bold">Classification Threshold: </span>{$DecisionBoundary}
             </p>
             <input
               type="range"
